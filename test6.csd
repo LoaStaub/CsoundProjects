@@ -1,14 +1,13 @@
 <CsoundSynthesizer>
 <CsOptions>
-;CHANGE YOUR INPUT AND OUTPUT DEVICE NUMBER HERE IF NECESSARY!
 -iadc -odac -B512 -b128
 </CsOptions>
 <CsInstruments>
-;Example by Joachim Heintz
+
 sr = 44100 ;set sample rate to 44100 Hz
 ksmps = 32 ;number of samples per control cycle
 nchnls = 2 ;use two audio channels
-0dbfs = 1 ;set maximum level as 1
+0dbfs = 1  ;set maximum level as 1
 
 instr 1
 aIn       inch      1   ;take input from channel 1
