@@ -14,8 +14,7 @@ instr wobbly
     ires random 0.4, 2           ; Range 0.4 - 2         
     iamp = ires                  ; Amplitude 
     ires random 5.01, 7.01       ; Range 5 - 7           
-    ipch = cpspch(ires)            ; Pitch
-    ires random 4.01, 8.01
+    ipch = cpspch(ires)          ; Pitch
     idivision = 1 / (p7 * ispb)  ; Division of Wobble
     ; Oscillators
     a1 vco2 iamp, ipch * 1.005, 0
